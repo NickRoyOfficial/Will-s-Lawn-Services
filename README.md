@@ -4,9 +4,11 @@ Static website. No dependencies, package install, build step, tracking, or backe
 
 Run locally with `python3 -m http.server 8000` and open http://localhost:8000.
 
-## Cloudflare Pages
+## Cloudflare Workers
 
-Connect this repository, choose production branch `main`, framework preset `None`, leave the build command empty, and use `/` as the build output directory. No environment variables are required.
+Connect this repository to the existing `will-s-lawn-services` Worker, choose production branch `main`, leave the build command empty, and use `npx wrangler deploy` as the deploy command. `wrangler.jsonc` configures static asset hosting; `.assetsignore` limits uploads to website files. No runtime environment variables are required.
+
+Review URL: https://will-s-lawn-services.nickroyofficial.workers.dev/
 
 The estimate form prepares a text message to the verified business number, 207-274-0429. Visitors explicitly open and send the text themselves. A copy fallback is available for desktop. No messages or personal information are stored by this website.
 

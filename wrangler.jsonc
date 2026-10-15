@@ -1,0 +1,9 @@
+{
+  "name": "will-s-lawn-services",
+  "compatibility_date": "2026-10-14",
+  "assets": {
+    "directory": "./",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
